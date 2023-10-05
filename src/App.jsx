@@ -90,7 +90,7 @@ function App() {
                 </div>
             ) : (
                 <div>
-                    <h1>Пожалуйста, войдите в систему</h1>              
+                    <h1>Пожалуйста, войдите или зарегиструйтесь</h1>              
                     <input type="text" placeholder="Имя пользователя" value={username} onChange={(e) => setUsername(e.target.value)} />
                     <input type="password" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <button onClick={handleLogin}>Войти</button>
