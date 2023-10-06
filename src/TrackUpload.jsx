@@ -18,6 +18,7 @@ function TrackUpload({ token }) {
                 .then(response => response.json())
                 .then(data => {
                     setTracks(data);
+                  
                 })
                 .catch(error => {
                     console.error('Произошла ошибка при получении списка треков:', error);
@@ -52,6 +53,7 @@ const handleUpload = (event) => {
         .then(response => response.json())
         .then(data => {
             console.log(data);
+            window.location.reload();
         })
         .catch(error => {
             console.error('Произошла ошибка при загрузке файла:', error);
